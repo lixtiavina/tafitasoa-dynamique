@@ -4,7 +4,6 @@ namespace App\Controllers\Admin;
 
 use App\Controllers\BaseController;
 use App\Models\ServiceModel;
-use App\Models\ContactModel;
 use App\Models\DevisModel;
 // (optionnel) si tu veux afficher le nombre de visites :
 //use App\Models\VisiteModel;
