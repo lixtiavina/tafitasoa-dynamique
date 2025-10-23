@@ -52,7 +52,7 @@ class Services extends BaseController
     {
         $model = new ServiceModel();
         $data['service'] = $model->find($id);
-        return view('admin/services/edit', $data);
+        return view('sarl/services/edit', $data);
     }
 
     public function update($id)

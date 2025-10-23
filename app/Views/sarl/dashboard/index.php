@@ -67,12 +67,17 @@
                         <?php endif; ?>
                     </a>
                 </div>
-
-                <!-- Groupe droit : Paramètres -->
-                <a href="<?= base_url('sarl/parametres') ?>"
-                    class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2">
-                    ⚙️ Paramètres du site
-                </a>
+                <div class="flex flex-col items-start gap-3">
+                    <!-- Groupe droit : Paramètres -->
+                    <a href="<?= base_url('sarl/register') ?>"
+                        class="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2">
+                        📝 Administrateur
+                    </a>
+                    <a href="<?= base_url('sarl/parametres') ?>"
+                        class="bg-purple-500 hover:bg-purple-600 text-white px-4 py-2 rounded-lg shadow flex items-center gap-2">
+                        ⚙️ Paramètres du site
+                    </a>
+                </div>
             </div>
         </div>
     </main>

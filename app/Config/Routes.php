@@ -35,11 +35,22 @@ $routes->group('sarl', ['namespace' => 'App\Controllers\Admin'], function ($rout
     $routes->get('devis', 'Devis::index');
     $routes->get('devis/reply/(:num)', 'Devis::reply/$1');
     $routes->post('devis/sendReply', 'Devis::sendReply');
-    $routes->post('devis/saveReply','Devis::saveReply');
+    $routes->post('devis/saveReply', 'Devis::saveReply');
     //props------------------------------
     $routes->get('propos', 'Propos::index');
     $routes->post('propos/update', 'Propos::update');
     //parametres---------------------------
     $routes->get('parametres', 'Parametres::index');
     $routes->post('parametres/save', 'Parametres::save');
+
+    //register-----------------------------
+    $routes->get('register', 'Register::index');
+    $routes->post('register', 'Register::processAdminRegistration');
+    $routes->get('register/list', 'Register::list');
+    $routes->get('register/connected', 'Register::connectedAdmins');
+    $routes->get('register/check-username', 'Register::checkUsername');
+    $routes->get('register/check-email', 'Register::checkEmail');
+    $routes->get('register/get-admins-status', 'Register::getAdminsStatus');
+    $routes->get('register/update-activity', 'Register::updateActivity');
+    $routes->get('register/delete/(:num)', 'Register::delete/$1');
 });
